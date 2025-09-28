@@ -9,7 +9,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: gitops-flux-helm
-  path: ./bootstrap/gandalf
+  path: ./clusters/gandalf
   prune: true
   wait: true
   timeout: 10m
