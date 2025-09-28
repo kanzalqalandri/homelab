@@ -14,3 +14,5 @@ flux create secret git github-auth \
   --private-key-file=/home/kanzal/.ssh/id_rsa --export > github-auth.yaml
 
 2) create a GitRepository
+
+kubectl apply -f git-repository.yaml
