@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: pxc-operator
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  url: https://percona.github.io/percona-helm-charts
+
