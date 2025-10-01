@@ -1,0 +1,13 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: hello-world-app
+  namespace: default
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: hello-world-app
+      sourceRef:
+        kind: HelmRepository
+        name: hello-world
