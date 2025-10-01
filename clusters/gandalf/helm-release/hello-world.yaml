@@ -11,3 +11,4 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: hello-world
+        namespace: flux-system
