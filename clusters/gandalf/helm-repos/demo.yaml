@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: podinfo
-  namespace: default
+  namespace: flux-system
 spec:
   interval: 5m0s
   url: https://stefanprodan.github.io/podinfo
@@ -12,7 +12,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: podinfo-2
-  namespace: default
+  namespace: flux-system
 spec:
   interval: 5m0s
   url: https://stefanprodan.github.io/podinfo
