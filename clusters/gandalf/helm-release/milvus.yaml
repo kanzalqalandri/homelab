@@ -1,0 +1,14 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: milvus-operator
+  namespace: default
+spec:
+  interval: 10m
+  chart:
+    spec:
+      chart: milvus-operator
+      sourceRef:
+        kind: HelmRepository
+        name: milvus-operator
+        namespace: flux-system
