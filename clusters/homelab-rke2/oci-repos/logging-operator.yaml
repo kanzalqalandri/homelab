@@ -7,3 +7,5 @@ metadata:
 spec:
   interval: 5m0s
   url: oci://ghcr.io/kube-logging/helm-charts/logging-operator
+  ref:
+    semver: "*"

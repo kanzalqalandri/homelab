@@ -6,4 +6,3 @@ metadata:
 spec:
   interval: 5m0s
   url: https://zilliztech.github.io/milvus-operator
-
