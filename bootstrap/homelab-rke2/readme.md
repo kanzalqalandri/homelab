@@ -17,7 +17,7 @@ kubectl apply -f github-auth.yaml
 
 2) create a GitRepository
 
-kubectl apply -f git-repository.yaml
+kubectl apply -f secrets.yaml
 
 # Initilize Kustomizization
 
