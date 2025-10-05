@@ -16,6 +16,7 @@ metadata:
 spec:
   interval: 10m
   targetNamespace: cert-manager
+  storageNamespace: cert-manager
   releaseName: cert-manager
   install:
     createNamespace: true
