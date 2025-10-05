@@ -13,6 +13,12 @@ flux create secret git github-auth \
   --url=ssh://git@github.com/kanzalqalandri/homelab-gitops.git \
   --private-key-file=/home/kanzal/.ssh/id_rsa --export > github-auth.yaml
 
+kubectl apply -f github-auth.yaml
+
 2) create a GitRepository
 
 kubectl apply -f git-repository.yaml
+
+# Initilize Kustomizization
+
+kubectl apply -f kustomization.yaml
