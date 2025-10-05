@@ -3,7 +3,7 @@
 1) Install flux cli
 2) Run below command
 
-flux install --version v2.6.4
+flux install --version v2.6.4 --components-extra 'image-reflector-controller,image-automation-controller'
 
 # Add repo to track
 
