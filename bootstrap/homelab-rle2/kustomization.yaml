@@ -5,7 +5,7 @@ metadata:
   name: homelab-rke2
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 2m
   sourceRef:
     kind: GitRepository
     name: homelab-gitops

@@ -5,7 +5,7 @@ metadata:
   name: homelab-gitops
   namespace: flux-system
 spec:
-  interval: 1m
+  interval: 2m
   url: ssh://git@github.com/kanzalqalandri/homelab-gitops.git
   secretRef:
     name: github-auth
