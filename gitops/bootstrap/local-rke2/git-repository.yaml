@@ -2,13 +2,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: homelab-gitops
+  name: homelab
   namespace: flux-system
 spec:
   interval: 2m
-  url: ssh://git@github.com/kanzalqalandri/homelab-gitops.git
-  secretRef:
-    name: github-auth
+  url: https://github.com/kanzalqalandri/homelab
   ref:
     branch: main
-
