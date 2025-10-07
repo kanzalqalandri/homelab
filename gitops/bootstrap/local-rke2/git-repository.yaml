@@ -6,6 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 2m
+  timeout: 5m
   url: https://github.com/kanzalqalandri/homelab
   ref:
     branch: main
