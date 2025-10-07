@@ -20,3 +20,24 @@ spec:
   url: oci://cr.kgateway.dev/kgateway-dev/charts/kgateway
   ref:
     tag: v2.0.4
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: kgateway-crds
+  namespace: flux-system
+spec:
+  interval: 24h
+  targetNamespace: kgateway-system
+  storageNamespace: kgateway-system
+  releaseName: kgateway-crds
+  install:
+    createNamespace: true
+  chart:
+    spec:
+      chart: kgateway-crds
+      version: v2.0.4
+      sourceRef:
+        kind: OCIRepository
+        name: kgateway-crds
+        namespace: flux-system
