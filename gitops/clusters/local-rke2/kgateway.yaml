@@ -33,11 +33,7 @@ spec:
   releaseName: kgateway-crds
   install:
     createNamespace: true
-  chart:
-    spec:
-      chart: kgateway-crds
-      version: v2.0.4
-      sourceRef:
-        kind: OCIRepository
-        name: kgateway-crds
-        namespace: flux-system
+  chartRef:
+    kind: OCIRepository
+    name: kgateway-crds
+    namespace: flux-system
