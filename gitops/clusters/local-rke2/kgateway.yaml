@@ -54,3 +54,6 @@ spec:
     kind: OCIRepository
     name: kgateway
     namespace: flux-system
+  values:
+    image:
+      tag: "v2.0.4"
