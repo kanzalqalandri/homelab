@@ -44,6 +44,8 @@ metadata:
   name: kgateway
   namespace: flux-system
 spec:
+  dependsOn:
+    - name: kgateway-crds
   interval: 24h
   targetNamespace: kgateway-system
   storageNamespace: kgateway-system
